@@ -27,9 +27,24 @@ class ProductCrud:
         product = session.query(Product).filter(Product.id == product_id).first()
 
         if product is None:
-            raise ValueError(f"Product with id {id} not found.")
+            raise ValueError(f"Product with id {product_id} not found.")
 
         session.delete(product)
         session.commit()
 
         return product
+
+    @classmethod
+    def update_product(cls, updated_product, session):
+        existing_product = session.query(Product).filter(Product.id == updated_product.id_product).first()
+        if existing_product is None:
+            raise ValueError(f"Product with id {updated_product.id_product} not found.")
+
+        existing_product.name = updated_product.new_name
+        existing_product.description = updated_product.new_description
+        existing_product.price = updated_product.new_price
+        existing_product.count = updated_product.new_count
+
+        session.commit()
+        session.refresh(existing_product)
+        return existing_product
