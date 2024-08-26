@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.models.session import get_session
 from app.schemas.customer import CustomerCreate, CustomerUpdate
-from app.services.customer import CustomerCrud
+from app.crud_operations.customer_crud import CustomerCrud
 
 customer_router = APIRouter(
     prefix='/customers', tags=['customer']
@@ -21,8 +21,8 @@ def create_customer(customer: CustomerCreate, session: Session = Depends(get_ses
     return new_customer
 
 
-@customer_router.delete('/delete_product/')
-def delete_customer(customer_id, session: Session = Depends(get_session)):
+@customer_router.delete('/delete_customer/')
+def delete_customer(customer_id: int, session: Session = Depends(get_session)):
     deleted_customer = CustomerCrud.delete_customer(customer_id, session)
     return deleted_customer
 

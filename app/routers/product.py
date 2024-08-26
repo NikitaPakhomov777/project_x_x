@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.models.session import get_session
 from app.schemas.product import ProductCreate
-from app.services.product import ProductCrud
+from app.crud_operations.product_crud import ProductCrud
 from app.schemas.product import ProductUpdate
 
 product_router = APIRouter(

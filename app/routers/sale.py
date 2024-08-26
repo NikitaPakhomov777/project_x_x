@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from app.models.session import get_session
 from app.schemas.sale import SaleCreate, SaleUpdate
-from app.services.sale import SaleCrud
+from app.crud_operations.sale_crud import SaleCrud
 
 sale_router = APIRouter(
     prefix='/sales', tags=['sale']
