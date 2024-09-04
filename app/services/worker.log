@@ -1,0 +1,27 @@
+2024-09-04 22:01:17,032 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-04 22:01:17,067 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-04 22:01:17,069 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-04 22:01:52,297 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-04 22:01:52,350 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-04 22:01:52,350 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-04 22:01:52,351 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-04 22:02:15,894 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-04 22:04:30,949 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-04 22:04:30,976 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-04 22:04:30,978 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-04 22:05:31,204 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-04 22:05:31,259 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-04 22:05:31,260 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-04 22:05:31,260 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-04 22:05:50,077 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-04 22:06:47,216 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-04 22:06:47,255 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-04 22:06:47,256 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-04 22:06:47,257 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-04 22:06:47,284 - app.services.rabbitmq_worker - ERROR - Error processing message: All connection attempts failed
+2024-09-04 22:06:47,285 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-04 22:07:01,467 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-04 22:07:01,516 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-04 22:07:01,516 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-04 22:07:01,517 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-04 22:07:14,765 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.

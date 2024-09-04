@@ -1,9 +1,11 @@
 from sqlalchemy.orm import Mapped, mapped_column, DeclarativeBase, relationship
-from sqlalchemy import ForeignKey
+from sqlalchemy import ForeignKey, MetaData
+
+metadata = MetaData()
 
 
 class Model(DeclarativeBase):
-    pass
+    metadata = metadata
 
 
 class Product(Model):
