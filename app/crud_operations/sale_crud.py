@@ -45,10 +45,14 @@ class SaleCrud:
         result = await session.execute(select(Product).filter(Product.id == new_sale.product_id))
         product = result.scalars().first()
 
+        from fastapi import HTTPException
+
         if product is None:
-            raise ValueError(f"Product with id {sale.product_id} not found.")
+            raise HTTPException(status_code=404,
+                                detail=f"Product with id {sale.product_id} not found.")
         if product.count < sale.quantity:
-            raise ValueError(f"Product with id {sale.product_id} count not enough.")
+            raise HTTPException(status_code=400,
+                                detail=f"Not enough product in stock.")
 
         product.count -= sale.quantity
 

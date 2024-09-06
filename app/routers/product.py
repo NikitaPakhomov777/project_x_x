@@ -15,7 +15,7 @@ async def get_products(skip: int = 0, limit: int = 10, session: AsyncSession = D
     return get_all_products
 
 
-@product_router.post('/add/')
+@product_router.api_route('/add/', methods=["POST"])
 async def create_product(product: ProductCreate, session: AsyncSession = Depends(get_async_session)):
     new_product = await ProductCrud.post_new_product(product, session)
     return new_product

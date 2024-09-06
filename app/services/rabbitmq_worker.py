@@ -3,17 +3,9 @@ import httpx
 import json
 import asyncio
 import logging
-import os
 
-log_directory = "services"  # Замените на нужную вам папку
-log_file = "worker.log"
 
-# Создайте папку, если она не существует
-if not os.path.exists(log_directory):
-    os.makedirs(log_directory)
-
-# Полный путь к файлу логов
-log_path = os.path.join(log_directory, log_file)
+log_path = "worker.log"
 
 # Настройка логирования
 logging.basicConfig(
@@ -48,13 +40,39 @@ async def start_rabbitmq_worker():
                         # Декодируем сообщение
                         request_data = json.loads(message.body)
                         endpoint = request_data['endpoint']
-                        params = request_data.get('params', {})
+                        method = request_data.get('method', 'GET').upper()  # Метод запроса (по умолчанию GET)
+                        params = request_data.get('params', {})  # Параметры запроса
+                        data = request_data.get('data', None)  # Тело запроса для POST/PUT
 
                         # Отправляем асинхронный запрос к FastAPI
                         async with httpx.AsyncClient() as client:
-                            response = await client.get(
-                                f"http://localhost:8000{endpoint}",
-                                params=params)
+                            if method == 'GET':
+                                response = await client.get(
+                                    f"http://localhost:8000{endpoint}",
+                                    params=params
+                                )
+                            elif method == 'POST':
+                                response = await client.post(
+                                    f"http://localhost:8000{endpoint}",
+                                    json=data  # Тело запроса для POST в формате JSON
+                                )
+                            elif method == 'PUT':
+                                response = await client.put(
+                                    f"http://localhost:8000{endpoint}",
+                                    json=data
+                                )
+                            elif method == 'PATCH':
+                                response = await client.patch(
+                                    f"http://localhost:8000{endpoint}",
+                                    json=data
+                                )
+                            elif method == 'DELETE':
+                                response = await client.delete(
+                                    f"http://localhost:8000{endpoint}"
+                                )
+                            else:
+                                raise ValueError(f"Unsupported method: {method}")
+
                             response.raise_for_status()  # Проверка на успешный ответ
 
                         # Формируем результат
@@ -62,8 +80,7 @@ async def start_rabbitmq_worker():
                             'status_code': response.status_code,
                             'content': response.json()
                         }
-                        logger.info(
-                            f"Request to {endpoint} succeeded with status code {response.status_code}.")
+                        logger.info(f"Request to {endpoint} succeeded with status code {response.status_code}.")
                     except Exception as exc:
                         # Обработка исключений и создание сообщения об ошибке
                         result = {
@@ -80,7 +97,7 @@ async def start_rabbitmq_worker():
                     logger.info("Sent response data to response_queue.")
 
             # Устанавливаем callback для обработки сообщений из request_queue
-            await request_queue.consume(callback)  # Убираем параметр no_ack
+            await request_queue.consume(callback)
 
             logger.info(' [*] Waiting for messages. To exit press CTRL+C')
             await asyncio.Future()  # Блокируем выполнение, ожидая сообщений

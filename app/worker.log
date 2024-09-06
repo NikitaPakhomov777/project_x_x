@@ -1,0 +1,515 @@
+2024-09-05 14:19:18,229 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:19:18,289 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:19:18,290 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:19:37,349 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:19:37,442 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 14:19:37,442 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 14:19:37,444 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:19:48,427 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:27:24,720 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:27:24,745 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:27:24,747 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:27:41,872 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:27:41,938 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 14:27:41,938 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 14:27:41,939 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:28:17,530 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:28:17,566 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 405 Method Not Allowed"
+2024-09-05 14:28:17,567 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '405 Method Not Allowed' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
+2024-09-05 14:28:17,568 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:36:07,579 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:36:22,362 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:36:22,390 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:36:22,392 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:36:38,206 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:36:38,277 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 14:36:38,278 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 14:36:38,279 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:37:06,978 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:37:07,022 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 500 Internal Server Error"
+2024-09-05 14:37:07,023 - app.services.rabbitmq_worker - ERROR - Error processing message: Server error '500 Internal Server Error' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2024-09-05 14:37:07,024 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:40:06,923 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:40:09,076 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:40:09,105 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:40:09,107 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:40:35,848 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:40:35,906 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 500 Internal Server Error"
+2024-09-05 14:40:35,907 - app.services.rabbitmq_worker - ERROR - Error processing message: Server error '500 Internal Server Error' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2024-09-05 14:40:35,908 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:49:31,633 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:49:57,568 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:49:57,596 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:49:57,599 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:50:10,515 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:50:10,572 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 14:50:10,573 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 14:50:10,574 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:50:31,179 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:50:31,217 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 200 OK"
+2024-09-05 14:50:31,218 - app.services.rabbitmq_worker - INFO - Request to /products/add/ succeeded with status code 200.
+2024-09-05 14:50:31,218 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:55:07,191 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:55:35,162 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:55:35,194 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:55:35,196 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:56:02,024 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:56:02,100 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 14:56:02,100 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 14:56:02,101 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:56:22,976 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:56:23,014 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 422 Unprocessable Entity"
+2024-09-05 14:56:23,014 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2024-09-05 14:56:23,015 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 14:57:25,322 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 14:57:50,409 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 14:57:50,448 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 14:57:50,451 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 14:58:06,883 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 14:58:06,938 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 422 Unprocessable Entity"
+2024-09-05 14:58:06,939 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2024-09-05 14:58:06,940 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:02:23,338 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:02:33,006 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:02:33,029 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:02:33,042 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:03:19,968 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:03:20,024 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 405 Method Not Allowed"
+2024-09-05 15:03:20,025 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '405 Method Not Allowed' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
+2024-09-05 15:03:20,026 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:04:37,403 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:04:47,293 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:04:47,318 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:04:47,319 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:05:00,339 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:05:00,391 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 15:05:00,391 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 15:05:00,392 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:05:20,584 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:05:20,622 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/add/ "HTTP/1.1 422 Unprocessable Entity"
+2024-09-05 15:05:20,622 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '422 Unprocessable Entity' for url 'http://localhost:8000/products/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2024-09-05 15:05:20,623 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:06:53,268 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:09:44,720 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:09:44,754 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:09:44,755 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:14:33,779 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:15:00,408 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:15:00,434 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:15:00,436 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:15:14,029 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:15:14,084 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 15:15:14,085 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 15:15:14,086 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:19:59,714 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:20:02,173 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:20:02,196 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:20:02,198 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:20:16,225 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:20:16,294 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 15:20:16,294 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 15:20:16,295 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:20:36,689 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:20:36,739 - httpx - INFO - HTTP Request: POST http://localhost:8000/products/add/ "HTTP/1.1 200 OK"
+2024-09-05 15:20:36,740 - app.services.rabbitmq_worker - INFO - Request to /products/add/ succeeded with status code 200.
+2024-09-05 15:20:36,741 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:20:54,121 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:20:54,159 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 15:20:54,159 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 15:20:54,160 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:21:56,979 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 15:22:56,565 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 15:22:56,592 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 15:22:56,594 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 15:23:37,272 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 15:23:37,337 - httpx - INFO - HTTP Request: POST http://localhost:8000/products/add/ "HTTP/1.1 200 OK"
+2024-09-05 15:23:37,337 - app.services.rabbitmq_worker - INFO - Request to /products/add/ succeeded with status code 200.
+2024-09-05 15:23:37,338 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 15:23:59,321 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:02:17,582 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:02:17,635 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:02:17,637 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:02:34,259 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:02:34,316 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 16:02:34,317 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 16:02:34,318 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:02:47,617 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:02:47,655 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/products/delete/8 "HTTP/1.1 404 Not Found"
+2024-09-05 16:02:47,656 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/products/delete/8'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:02:47,657 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:03:24,273 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:03:24,318 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/products/delete/8 "HTTP/1.1 404 Not Found"
+2024-09-05 16:03:24,319 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/products/delete/8'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:03:24,319 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:03:42,489 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:05:34,929 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:05:34,956 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:05:34,958 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:05:51,982 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:05:52,034 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/products/delete "HTTP/1.1 404 Not Found"
+2024-09-05 16:05:52,035 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/products/delete'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:05:52,035 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:07:10,362 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:07:18,880 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:07:18,903 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:07:18,904 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:07:39,426 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:07:39,486 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/id=7 "HTTP/1.1 404 Not Found"
+2024-09-05 16:07:39,486 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/id=7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:07:39,487 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:07:56,691 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:11:19,775 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:11:19,813 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:11:19,814 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:12:33,472 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:12:39,975 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:12:40,001 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:12:40,003 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:16:02,781 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:16:20,815 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:16:20,844 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:16:20,845 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:16:40,046 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:16:40,110 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/8 "HTTP/1.1 404 Not Found"
+2024-09-05 16:16:40,110 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/8'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:16:40,111 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:19:01,580 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:19:08,198 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:19:08,222 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:19:08,225 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:19:40,862 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:19:57,076 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:19:57,104 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:19:57,105 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:21:03,180 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:21:14,629 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:21:14,662 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:21:14,664 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:21:29,597 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:21:29,659 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 16:21:29,660 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 16:21:29,661 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:21:40,574 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:21:40,616 - httpx - INFO - HTTP Request: POST http://localhost:8000/products/add/ "HTTP/1.1 200 OK"
+2024-09-05 16:21:40,616 - app.services.rabbitmq_worker - INFO - Request to /products/add/ succeeded with status code 200.
+2024-09-05 16:21:40,617 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:21:49,597 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:21:49,634 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/9 "HTTP/1.1 404 Not Found"
+2024-09-05 16:21:49,634 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/9'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:21:49,635 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:26:13,147 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:26:17,097 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:26:17,143 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:26:17,145 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:26:45,859 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:26:45,925 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/{product_id} "HTTP/1.1 404 Not Found"
+2024-09-05 16:26:45,926 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/{product_id}'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:26:45,927 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:28:24,092 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:33:25,204 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:33:25,230 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:33:25,232 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:34:10,486 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:34:15,291 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:34:15,314 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:34:15,316 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:34:43,784 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:34:43,825 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/7 "HTTP/1.1 404 Not Found"
+2024-09-05 16:34:43,826 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:34:43,826 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:39:59,838 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:40:54,846 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:40:54,922 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:40:54,924 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:41:20,255 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:41:20,304 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/7 "HTTP/1.1 404 Not Found"
+2024-09-05 16:41:20,305 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:41:20,305 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:44:01,572 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:44:59,462 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:44:59,490 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:44:59,492 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:45:20,399 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:45:20,457 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/7 "HTTP/1.1 404 Not Found"
+2024-09-05 16:45:20,457 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:45:20,458 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:45:41,958 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:45:41,999 - httpx - INFO - HTTP Request: POST http://localhost:8000/products/add/ "HTTP/1.1 200 OK"
+2024-09-05 16:45:42,000 - app.services.rabbitmq_worker - INFO - Request to /products/add/ succeeded with status code 200.
+2024-09-05 16:45:42,000 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 16:56:29,278 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 16:56:47,366 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 16:56:47,399 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 16:56:47,401 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 16:59:37,267 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 16:59:37,314 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_products/9 "HTTP/1.1 404 Not Found"
+2024-09-05 16:59:37,314 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_products/9'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 16:59:37,315 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 17:00:10,617 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 17:00:10,660 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_products/9 "HTTP/1.1 404 Not Found"
+2024-09-05 17:00:10,660 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_products/9'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 17:00:10,661 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 17:00:29,336 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 17:00:29,377 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/7 "HTTP/1.1 404 Not Found"
+2024-09-05 17:00:29,377 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 17:00:29,378 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 17:00:44,709 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 17:00:44,749 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 17:00:44,750 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 17:00:44,750 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 17:01:40,405 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 17:56:57,941 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 17:56:57,992 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 17:56:57,994 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 17:58:29,734 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 17:58:29,814 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 17:58:29,815 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 17:58:29,816 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 17:58:41,155 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 17:58:41,197 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/7 "HTTP/1.1 404 Not Found"
+2024-09-05 17:58:41,197 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/7'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 17:58:41,198 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:00:32,552 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 18:00:40,011 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 18:00:40,048 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 18:00:40,050 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 18:01:07,114 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:01:07,179 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/delete_product/9 "HTTP/1.1 404 Not Found"
+2024-09-05 18:01:07,179 - app.services.rabbitmq_worker - ERROR - Error processing message: Client error '404 Not Found' for url 'http://localhost:8000/delete_product/9'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2024-09-05 18:01:07,180 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:01:20,294 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 18:01:55,803 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 18:01:55,853 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 18:01:55,856 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 18:02:15,065 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:02:15,111 - app.services.rabbitmq_worker - ERROR - Error processing message: Invalid port: '8000products'
+2024-09-05 18:02:15,113 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:06:47,337 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 18:07:01,494 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 18:07:01,535 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 18:07:01,538 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 18:07:25,978 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:07:26,053 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/products/delete_product/9 "HTTP/1.1 200 OK"
+2024-09-05 18:07:26,053 - app.services.rabbitmq_worker - INFO - Request to /products/delete_product/9 succeeded with status code 200.
+2024-09-05 18:07:26,054 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:07:40,588 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 18:23:35,673 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 18:23:35,732 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 18:23:35,735 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 18:24:05,398 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:24:05,472 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 18:24:05,473 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 18:24:05,474 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:28:37,661 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:28:37,723 - httpx - INFO - HTTP Request: PATCH http://localhost:8000/products/update_product/ "HTTP/1.1 200 OK"
+2024-09-05 18:28:37,724 - app.services.rabbitmq_worker - INFO - Request to /products/update_product/ succeeded with status code 200.
+2024-09-05 18:28:37,725 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:28:46,907 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 18:28:46,950 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 18:28:46,951 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 18:28:46,952 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 18:32:26,259 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:08:13,471 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:08:13,542 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:08:13,545 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:08:37,474 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:08:37,547 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:08:37,547 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:08:37,548 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:08:44,797 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:09:06,552 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:09:06,578 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:09:06,579 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:09:22,071 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:09:22,142 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:09:22,143 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:09:22,144 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:09:36,809 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:12:32,717 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:12:32,740 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:12:32,755 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:13:36,737 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:13:36,803 - httpx - INFO - HTTP Request: POST http://localhost:8000/customers/add/ "HTTP/1.1 200 OK"
+2024-09-05 21:13:36,804 - app.services.rabbitmq_worker - INFO - Request to /customers/add/ succeeded with status code 200.
+2024-09-05 21:13:36,805 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:13:53,587 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:13:53,627 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:13:53,627 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:13:53,628 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:14:48,579 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:17:36,271 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:17:36,310 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:17:36,312 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:17:50,896 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:17:50,970 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:17:50,970 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 21:17:50,971 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:17:57,075 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:17:57,115 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:17:57,116 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:17:57,116 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:18:06,547 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:18:06,593 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/customers/delete_customer/23/ "HTTP/1.1 200 OK"
+2024-09-05 21:18:06,593 - app.services.rabbitmq_worker - INFO - Request to /customers/delete_customer/23/ succeeded with status code 200.
+2024-09-05 21:18:06,594 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:18:19,794 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:18:19,832 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:18:19,833 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:18:19,833 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:18:33,073 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:22:52,756 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:22:52,784 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:22:52,786 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:26:55,340 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:26:55,417 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:26:55,417 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:26:55,418 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:28:03,692 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:28:03,735 - httpx - INFO - HTTP Request: PATCH http://localhost:8000/customers/update_customer/ "HTTP/1.1 200 OK"
+2024-09-05 21:28:03,736 - app.services.rabbitmq_worker - INFO - Request to /customers/update_customer/ succeeded with status code 200.
+2024-09-05 21:28:03,736 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:28:25,049 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:34:06,682 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:34:06,727 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:34:06,729 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:34:20,948 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:34:20,993 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:34:20,993 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 21:34:20,994 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:34:30,467 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:34:30,494 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:34:30,495 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-05 21:34:30,495 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:43:29,779 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 21:44:01,482 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 21:44:01,522 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 21:44:01,525 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 21:45:00,469 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 21:45:00,544 - httpx - INFO - HTTP Request: GET http://localhost:8000/sales/get/ "HTTP/1.1 200 OK"
+2024-09-05 21:45:00,544 - app.services.rabbitmq_worker - INFO - Request to /sales/get/ succeeded with status code 200.
+2024-09-05 21:45:00,545 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 21:55:54,595 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-05 22:36:00,546 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-05 22:36:00,597 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-05 22:36:00,599 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-05 22:37:03,866 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-05 22:37:03,927 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-05 22:37:03,927 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-05 22:37:03,928 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-05 22:37:30,224 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:14:22,040 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:14:22,105 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:14:22,109 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:14:40,117 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:14:40,182 - httpx - INFO - HTTP Request: GET http://localhost:8000/sales/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:14:40,183 - app.services.rabbitmq_worker - INFO - Request to /sales/get/ succeeded with status code 200.
+2024-09-06 14:14:40,184 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:15:20,595 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:15:20,637 - httpx - INFO - HTTP Request: POST http://localhost:8000/sales/add/ "HTTP/1.1 500 Internal Server Error"
+2024-09-06 14:15:20,637 - app.services.rabbitmq_worker - ERROR - Error processing message: Server error '500 Internal Server Error' for url 'http://localhost:8000/sales/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2024-09-06 14:15:20,638 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:17:29,655 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:17:30,496 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:17:30,523 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:17:30,525 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:17:53,008 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:17:53,059 - httpx - INFO - HTTP Request: GET http://localhost:8000/customers/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:17:53,059 - app.services.rabbitmq_worker - INFO - Request to /customers/get/ succeeded with status code 200.
+2024-09-06 14:17:53,060 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:18:08,622 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:18:08,674 - httpx - INFO - HTTP Request: POST http://localhost:8000/sales/add/ "HTTP/1.1 500 Internal Server Error"
+2024-09-06 14:18:08,674 - app.services.rabbitmq_worker - ERROR - Error processing message: Server error '500 Internal Server Error' for url 'http://localhost:8000/sales/add/'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2024-09-06 14:18:08,675 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:22:11,878 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:22:20,926 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:22:20,964 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:22:20,966 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:25:55,232 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:25:56,013 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:25:56,035 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:25:56,038 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:30:12,482 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:37:20,712 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:37:20,755 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:37:20,757 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:38:20,069 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:38:27,219 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:38:27,244 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:38:27,245 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:38:49,657 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:38:49,727 - httpx - INFO - HTTP Request: POST http://localhost:8000/sales/add/ "HTTP/1.1 200 OK"
+2024-09-06 14:38:49,728 - app.services.rabbitmq_worker - INFO - Request to /sales/add/ succeeded with status code 200.
+2024-09-06 14:38:49,729 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:39:06,476 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:39:06,510 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:39:06,511 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-06 14:39:06,512 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:44:28,737 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:44:34,388 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:44:34,413 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:44:34,415 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:44:56,492 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:44:56,552 - httpx - INFO - HTTP Request: GET http://localhost:8000/sales/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:44:56,552 - app.services.rabbitmq_worker - INFO - Request to /sales/get/ succeeded with status code 200.
+2024-09-06 14:44:56,553 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:45:09,789 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:45:09,860 - httpx - INFO - HTTP Request: DELETE http://localhost:8000/sales/delete_sale/3 "HTTP/1.1 200 OK"
+2024-09-06 14:45:09,860 - app.services.rabbitmq_worker - INFO - Request to /sales/delete_sale/3 succeeded with status code 200.
+2024-09-06 14:45:09,861 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:45:16,538 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:45:16,568 - httpx - INFO - HTTP Request: GET http://localhost:8000/sales/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:45:16,569 - app.services.rabbitmq_worker - INFO - Request to /sales/get/ succeeded with status code 200.
+2024-09-06 14:45:16,570 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:45:22,671 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 14:47:09,450 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 14:47:09,478 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 14:47:09,480 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 14:47:28,630 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:47:28,673 - httpx - INFO - HTTP Request: GET http://localhost:8000/sales/get/ "HTTP/1.1 200 OK"
+2024-09-06 14:47:28,673 - app.services.rabbitmq_worker - INFO - Request to /sales/get/ succeeded with status code 200.
+2024-09-06 14:47:28,674 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:49:18,348 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 14:49:18,386 - httpx - INFO - HTTP Request: PATCH http://localhost:8000/sales/update_sale/ "HTTP/1.1 200 OK"
+2024-09-06 14:49:18,386 - app.services.rabbitmq_worker - INFO - Request to /sales/update_sale/ succeeded with status code 200.
+2024-09-06 14:49:18,387 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 14:49:51,062 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
+2024-09-06 16:18:01,560 - app.services.rabbitmq_worker - INFO - Starting RabbitMQ worker...
+2024-09-06 16:18:01,612 - app.services.rabbitmq_worker - INFO - Connected to RabbitMQ and channel created.
+2024-09-06 16:18:01,613 - app.services.rabbitmq_worker - INFO -  [*] Waiting for messages. To exit press CTRL+C
+2024-09-06 16:18:29,274 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 16:18:29,315 - httpx - INFO - HTTP Request: GET http://localhost:8000/endpoints/get_calls_count/ "HTTP/1.1 200 OK"
+2024-09-06 16:18:29,315 - app.services.rabbitmq_worker - INFO - Request to /endpoints/get_calls_count/ succeeded with status code 200.
+2024-09-06 16:18:29,316 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 16:19:07,119 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 16:19:07,174 - httpx - INFO - HTTP Request: GET http://localhost:8000/products/get/ "HTTP/1.1 200 OK"
+2024-09-06 16:19:07,175 - app.services.rabbitmq_worker - INFO - Request to /products/get/ succeeded with status code 200.
+2024-09-06 16:19:07,176 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 16:19:19,815 - app.services.rabbitmq_worker - INFO - Received a message.
+2024-09-06 16:19:19,887 - httpx - INFO - HTTP Request: GET http://localhost:8000/endpoints/get_calls_count/ "HTTP/1.1 200 OK"
+2024-09-06 16:19:19,888 - app.services.rabbitmq_worker - INFO - Request to /endpoints/get_calls_count/ succeeded with status code 200.
+2024-09-06 16:19:19,888 - app.services.rabbitmq_worker - INFO - Sent response data to response_queue.
+2024-09-06 16:19:50,891 - aio_pika.robust_connection - INFO - Connection to amqp://localhost/ closed. Reconnecting after 5 seconds.
